@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import ProductSlider from "./ProductSlider";
 
 export default function HeroBanner() {
   const images = [

@@ -1,11 +1,17 @@
 "use client";
-import Link from "next/link";
-
-// components/ProductCard.jsx
-
 import Image from "next/image";
 
 export default function ProductCard({ product }) {
+  // Define color mapping for badges
+  const badgeColors = {
+    "No.1 Face Wash": "bg-green-500",
+    "Best Seller": "bg-yellow-500",
+    "Stock Running": "bg-red-500",
+    "Customer Favorite": "bg-blue-500",
+  };
+
+  const badgeColor = badgeColors[product.badge] || "bg-gray-400";
+
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 p-4">
       {/* Product Image */}
@@ -16,10 +22,13 @@ export default function ProductCard({ product }) {
           fill
           className="object-cover rounded-xl"
         />
-        {/* Offer Tag */}
-        {product.offer && (
-          <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-lg">
-            {product.offer}
+
+        {/* Dynamic Offer Tag */}
+        {product.badge && (
+          <span
+            className={`absolute top-2 left-2 text-white text-xs font-semibold px-2 py-1 rounded-lg ${badgeColor}`}
+          >
+            {product.badge}
           </span>
         )}
       </div>
@@ -57,4 +66,3 @@ export default function ProductCard({ product }) {
     </div>
   );
 }
-
