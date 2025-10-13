@@ -2,14 +2,13 @@ import HeroBanner from "./components/HeroBanner";
 import ProductCard from "./components/ProductCard";
 import products from "../app/data/productsData";
 import sectionsData from "../app/data/sectionsData";
-import ProductSlider from "./components/ProductSlider";
+
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
       <HeroBanner />
-      <ProductSlider products={products} />
 
       {/* Dynamic Sections */}
       {sectionsData.map((section, index) => (
