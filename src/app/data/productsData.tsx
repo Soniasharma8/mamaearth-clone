@@ -53,7 +53,7 @@ const products = [
     // offer: "10% OFF",
     badge: "Customer Favorite",
     rating: "4.8",
-    category: "Skincare",
+    category: "Hair",
   },
   {
     id: 6,

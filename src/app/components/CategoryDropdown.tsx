@@ -1,7 +1,16 @@
 "use client";
 import Link from "next/link";
 
-export default function CategoryDropdown({ subcategories }) {
+interface Subcategory {
+  name: string;
+  link: string;
+}
+
+interface CategoryDropdownProps {
+  subcategories: Subcategory[];
+}
+
+export default function CategoryDropdown({ subcategories }: CategoryDropdownProps) {
   return (
     <div className="absolute top-full left-0 bg-white shadow-lg rounded-md p-4 w-48 z-50">
       {subcategories.map((sub, idx) => (
