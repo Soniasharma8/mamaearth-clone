@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 
-
 export default function HeroBanner() {
   const images = [
     "/images/banner1.png",
@@ -9,6 +8,7 @@ export default function HeroBanner() {
     "/images/banner3.png",
     "/images/banner4.png",
     "/images/banner5.png",
+    "/images/banner6.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

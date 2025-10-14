@@ -31,16 +31,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="bg-[rgb(255,108,98)] text-white text-xs md:text-sm py-1 px-4">
+      <div className="bg-[rgb(240,68,56)] text-white text-xs md:text-sm py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
           <div className="text-right font-medium">
-            Asia's First Brand with Made Safe Certified Products
+            Asia's First Brand with MADE SAFE Certified Products
           </div>
           <div className="flex items-center space-x-1">
             <span className="font-medium">
-              Karwa Chauth Special: Get a Kajal Free |
+              Valid Only Today: Flat 50% Off On Selected Products |
             </span>
-            <span className="font-semibold">Code: FREEKAJAL |</span>
+            {/* <span className="font-semibold">Code: FREEKAJAL |</span> */}
             <Link href="/shop-now" className="underline hover:text-yellow-200">
               Shop Now
             </Link>

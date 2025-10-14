@@ -1,135 +1,240 @@
 export default function Footer() {
   return (
-    <footer className="bg-green-800 text-white mt-10">
-      {/* Top Section */}
-      <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {/* Column 1 */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3">About</h3>
-          <ul className="space-y-2 text-sm text-gray-200">
-            <li>
-              <a href="#" className="hover:text-white">
-                Our Story
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Our Promise
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div className="bg-gradient-to-b from-teal-50 to-white">
+      {/* Hero Section with Video */}
+      <section className="max-w-7xl mx-auto px-4 py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Left Side - Text Content */}
+          <div className="space-y-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              Our Goodness Promise
+            </h1>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              At Mamaearth, we live to spread a little love and goodness every
+              day. We believe that goodness isn't a superpower, nor a special
+              gift, it's inside all of us and it shows in the little choices we
+              make. Our mission is to bring you the best of nature through our
+              purest and most nurturing products that are made without any
+              toxins or harmful chemicals. For us goodness also means being good
+              to the earth. Which is why we recycle more plastic than we use and
+              we're PETA Certified - which means we never test on animals. This
+              is our #GoodnessInside.
+            </p>
 
-        {/* Column 2 */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Customer Care</h3>
-          <ul className="space-y-2 text-sm text-gray-200">
-            <li>
-              <a href="#" className="hover:text-white">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                FAQs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Returns & Refunds
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Track Order
-              </a>
-            </li>
-          </ul>
-        </div>
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                Shop Now
+              </button>
+              <button className="border-2 border-teal-600 text-teal-600 hover:bg-teal-50 font-semibold px-8 py-3 rounded-lg transition-colors">
+                Our Pledges
+              </button>
+            </div>
+          </div>
 
-        {/* Column 3 */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Shop</h3>
-          <ul className="space-y-2 text-sm text-gray-200">
-            <li>
-              <a href="#" className="hover:text-white">
-                Skin Care
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Hair Care
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Baby Care
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Makeup
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Column 4 */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Follow Us</h3>
-          <div className="flex space-x-4">
-            <a href="#" aria-label="Facebook" className="hover:text-gray-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M13 3h4v4h-4v3h4v4h-4v10h-4V14H7v-4h2.99V7.66C9.99 4.51 11.43 3 13 3z" />
-              </svg>
-            </a>
-            <a href="#" aria-label="Instagram" className="hover:text-gray-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3A2.8 2.8 0 1 1 14.8 12 2.8 2.8 0 0 1 12 14.8zm4.9-7.9a.9.9 0 1 1-.9-.9.9.9 0 0 1 .9.9z" />
-              </svg>
-            </a>
-            <a href="#" aria-label="Twitter" className="hover:text-gray-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22.46 6c-.77.35-1.5.59-2.27.69.82-.49 1.44-1.28 1.74-2.21-.78.46-1.62.8-2.52.98a4.15 4.15 0 0 0-7.17 3.78A11.77 11.77 0 0 1 3.1 4.9a4.15 4.15 0 0 0 1.29 5.54 4.08 4.08 0 0 1-1.88-.52v.05a4.16 4.16 0 0 0 3.33 4.07 4.22 4.22 0 0 1-1.87.07 4.16 4.16 0 0 0 3.88 2.89A8.36 8.36 0 0 1 2 19.54a11.78 11.78 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68v-.53c.81-.58 1.5-1.3 2.05-2.13z" />
-              </svg>
-            </a>
+          {/* Right Side - YouTube Video */}
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-xl"
+              src="https://www.youtube.com/embed/YROZybuYGUE"
+              title="Mamaearth Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Divider */}
-      <div className="border-t border-green-700"></div>
+      {/* Decorative Image Section */}
+      <section className="max-w-12xl mx-auto px-4 py-4">
+        <div className="relative h-70 lg:h-96 rounded-1xl overflow-hidden">
+          <img
+            src="/images/footer.png"
+            alt="Nature Banner"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
 
-      {/* Bottom Section */}
-      <div className="text-center text-sm text-gray-300 py-4">
-        © {new Date().getFullYear()} MamaEarthClone by Sonia | Built for
-        Learning ❤️
-      </div>
-    </footer>
+      {/* Super Safe Standards Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          Heading
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">
+            Super Safe Standards
+          </h2>
+
+          {/* Standards Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Dermatologically Tested */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-10 h-10 text-teal-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">
+                Dermatologically Tested
+              </h3>
+              <p className="text-gray-600">
+                We ensure each product is tested clinically on the sensitive
+                human skin to ensure that it is not allergic.
+              </p>
+            </div>
+
+            {/* FDA Approved */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-10 h-10 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">FDA Approved</h3>
+              <p className="text-gray-600">
+                MamaEarth is FDA approved, which means we are 100% safe to be
+                used for babies as well as mamas.
+              </p>
+            </div>
+
+            {/* Made Safe Certified */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-10 h-10 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">
+                Made Safe Certified
+              </h3>
+              <p className="text-gray-600">
+                The MADE SAFE (Made with Safe Ingredients™) seal means that a
+                product is literally made with safe ingredients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Customers Say Section */}
+      <section className="bg-gradient-to-b from-white to-teal-50 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">
+            What Our Customers Say
+          </h2>
+
+          {/* Testimonials Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-xl">
+                    ★
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-4">
+                "Amazing products! My baby's skin has never been softer. Totally
+                recommend Mamaearth to all parents."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+                  <span className="text-teal-600 font-bold text-lg">P</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Priya Sharma</p>
+                  <p className="text-sm text-gray-500">Verified Buyer</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-xl">
+                    ★
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-4">
+                "Love the natural ingredients! My hair fall has reduced
+                significantly after using their onion range."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span className="text-blue-600 font-bold text-lg">A</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Anjali Mehta</p>
+                  <p className="text-sm text-gray-500">Verified Buyer</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-xl">
+                    ★
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-4">
+                "Finally a brand I can trust! No harsh chemicals, just pure
+                goodness. My skin has never looked better."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <span className="text-green-600 font-bold text-lg">R</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Rajesh Kumar</p>
+                  <p className="text-sm text-gray-500">Verified Buyer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
