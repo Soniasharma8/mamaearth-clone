@@ -1,10 +1,60 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import MainContent from "./MainContent";
+
 export default function Footer() {
+  const testimonials = [
+    {
+      text: "Amazing products! My baby's skin has never been softer. Totally recommend Mamaearth to all parents.",
+      name: "Priya Sharma",
+      initial: "P",
+      color: "teal",
+    },
+    {
+      text: "Love the natural ingredients! My hair fall has reduced significantly after using their onion range.",
+      name: "Anjali Mehta",
+      initial: "A",
+      color: "blue",
+    },
+    {
+      text: "Finally a brand I can trust! No harsh chemicals, just pure goodness. My skin has never looked better.",
+      name: "Rajesh Kumar",
+      initial: "R",
+      color: "green",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 2000); // 2 seconds delay
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
+  const currentTestimonial = testimonials[currentIndex];
+
   return (
     <div className="bg-gradient-to-b from-teal-50 to-white">
       {/* Hero Section with Video */}
       <section className="max-w-7xl mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left Side - Text Content */}
+          {/* Left Side - YouTube Video */}
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-xl"
+              src="https://www.youtube.com/embed/YROZybuYGUE"
+              title="Mamaearth Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* Right Side - Text Content */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Our Goodness Promise
@@ -31,18 +81,6 @@ export default function Footer() {
               </button>
             </div>
           </div>
-
-          {/* Right Side - YouTube Video */}
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-xl"
-              src="https://www.youtube.com/embed/YROZybuYGUE"
-              title="Mamaearth Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
         </div>
       </section>
 
@@ -60,7 +98,6 @@ export default function Footer() {
       {/* Super Safe Standards Section */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4">
-          Heading
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">
             Super Safe Standards
           </h2>
@@ -68,172 +105,162 @@ export default function Footer() {
           {/* Standards Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Dermatologically Tested */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-10 h-10 text-teal-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/super1.png"
+                alt="Dermatologically Tested"
+                className="w-25 h-25 object-cover rounded-lg"
+              />
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-gray-900">
+                  Dermatologically Tested
+                </h3>
+                <p className="text-gray-600">
+                  We ensure each product is tested clinically on the sensitive
+                  human skin to ensure that it is not allergic.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900">
-                Dermatologically Tested
-              </h3>
-              <p className="text-gray-600">
-                We ensure each product is tested clinically on the sensitive
-                human skin to ensure that it is not allergic.
-              </p>
             </div>
 
             {/* FDA Approved */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-10 h-10 text-blue-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/super2.png"
+                alt="FDA Approved"
+                className="w-25 h-25 object-cover rounded-lg"
+              />
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-gray-900">
+                  FDA Approved
+                </h3>
+                <p className="text-gray-600">
+                  MamaEarth is FDA approved, which means we are 100% safe to be
+                  used for babies as well as mamas.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900">FDA Approved</h3>
-              <p className="text-gray-600">
-                MamaEarth is FDA approved, which means we are 100% safe to be
-                used for babies as well as mamas.
-              </p>
             </div>
 
             {/* Made Safe Certified */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-                    />
-                  </svg>
-                </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/super3.png"
+                alt="Made Safe Certified"
+                className="w-25 h-25 object-cover rounded-lg"
+              />
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-gray-900">
+                  Made Safe Certified
+                </h3>
+                <p className="text-gray-600">
+                  The MADE SAFE (Made with Safe Ingredients™) seal means that a
+                  product is literally made with safe ingredients.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900">
-                Made Safe Certified
-              </h3>
-              <p className="text-gray-600">
-                The MADE SAFE (Made with Safe Ingredients™) seal means that a
-                product is literally made with safe ingredients.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* What Customers Say Section */}
-      <section className="bg-gradient-to-b from-white to-teal-50 py-16">
+      <section className="bg-gradient-to-b from-white via-green-50 to-green-100 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">
             What Our Customers Say
           </h2>
 
           {/* Testimonials Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {/* Testimonial 1 */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">
-                    ★
-                  </span>
-                ))}
-              </div>
-              <p className="text-gray-700 mb-4">
-                "Amazing products! My baby's skin has never been softer. Totally
-                recommend Mamaearth to all parents."
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <p className="text-gray-700 text-sm leading-relaxed mb-6 min-h-[180px]">
+                I wanted to use natural products for my baby and came across
+                Mamaearth. I use its Baby Shampoo, Body Wash for Babies and Baby
+                Hair oil and they all work very effectively. So if you are
+                looking for a brand with an app, a safe and secure payment
+                gateway, and a wide range of toxin-free products, Mamaearth is
+                the one for you!
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
-                  <span className="text-teal-600 font-bold text-lg">P</span>
+                <div className="relative w-30 h-30 rounded-full overflow-hidden border-2 border-white shadow-md">
+                  <img
+                    src="/images/gina.png"
+                    alt="Gina"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Priya Sharma</p>
-                  <p className="text-sm text-gray-500">Verified Buyer</p>
+                  <p className="font-semibold text-gray-900">Gina</p>
+                  <div className="flex items-center gap-1">
+                    <span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded">
+                      5.0
+                    </span>
+                    <span className="text-yellow-400 text-sm">★</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">
-                    ★
-                  </span>
-                ))}
-              </div>
-              <p className="text-gray-700 mb-4">
-                "Love the natural ingredients! My hair fall has reduced
-                significantly after using their onion range."
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <p className="text-gray-700 text-sm leading-relaxed mb-6 min-h-[180px]">
+                I live near the coastal region, and sun tan is a big issue here.
+                A few months ago, I switched to Mamaearth Ubtan Face Wash, which
+                has worked pretty well. I now have a natural glow on my face and
+                my sun tan seems resolved too. Mamaearth's skincare products are
+                made of natural ingredients and contain no harmful
+                preservatives. Being affordable is another positive too.
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-lg">A</span>
+                <div className="relative w-30 h-30 rounded-full overflow-hidden border-2 border-white shadow-md">
+                  <img
+                    src="/images/waris.png"
+                    alt="Waris Raza"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Anjali Mehta</p>
-                  <p className="text-sm text-gray-500">Verified Buyer</p>
+                  <p className="font-semibold text-gray-900">Waris Raza</p>
+                  <div className="flex items-center gap-1">
+                    <span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded">
+                      5.0
+                    </span>
+                    <span className="text-yellow-400 text-sm">★</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">
-                    ★
-                  </span>
-                ))}
-              </div>
-              <p className="text-gray-700 mb-4">
-                "Finally a brand I can trust! No harsh chemicals, just pure
-                goodness. My skin has never looked better."
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <p className="text-gray-700 text-sm leading-relaxed mb-6 min-h-[180px]">
+                I have always used only natural products for my baby. One day, I
+                came across Mamaearth's products during an online search. I
+                bought its Baby Shampoo, Toothpaste, and Face Cream; they all
+                were toxin-free and effective. The shopping experience and
+                payment system were safe, fast, and quick.
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-green-600 font-bold text-lg">R</span>
+                <div className="relative w-30 h-30 rounded-full overflow-hidden border-2 border-white shadow-md">
+                  <img
+                    src="/images/manisha.png"
+                    alt="Manisha"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Rajesh Kumar</p>
-                  <p className="text-sm text-gray-500">Verified Buyer</p>
+                  <p className="font-semibold text-gray-900">Manisha</p>
+                  <div className="flex items-center gap-1">
+                    <span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded">
+                      5.0
+                    </span>
+                    <span className="text-yellow-400 text-sm">★</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <MainContent />
       </section>
     </div>
   );
