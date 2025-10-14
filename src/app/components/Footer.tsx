@@ -1,42 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import MainContent from "./MainContent";
 
 export default function Footer() {
-  const testimonials = [
-    {
-      text: "Amazing products! My baby's skin has never been softer. Totally recommend Mamaearth to all parents.",
-      name: "Priya Sharma",
-      initial: "P",
-      color: "teal",
-    },
-    {
-      text: "Love the natural ingredients! My hair fall has reduced significantly after using their onion range.",
-      name: "Anjali Mehta",
-      initial: "A",
-      color: "blue",
-    },
-    {
-      text: "Finally a brand I can trust! No harsh chemicals, just pure goodness. My skin has never looked better.",
-      name: "Rajesh Kumar",
-      initial: "R",
-      color: "green",
-    },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 2000); // 2 seconds delay
-
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
-
-  const currentTestimonial = testimonials[currentIndex];
-
   return (
     <div className="bg-gradient-to-b from-teal-50 to-white">
       {/* Hero Section with Video */}
@@ -61,13 +27,13 @@ export default function Footer() {
             </h1>
             <p className="text-gray-600 text-lg leading-relaxed">
               At Mamaearth, we live to spread a little love and goodness every
-              day. We believe that goodness isn't a superpower, nor a special
-              gift, it's inside all of us and it shows in the little choices we
+              day. We believe that goodness isn&apos;t a superpower, nor a special
+              gift, it&apos;s inside all of us and it shows in the little choices we
               make. Our mission is to bring you the best of nature through our
               purest and most nurturing products that are made without any
               toxins or harmful chemicals. For us goodness also means being good
               to the earth. Which is why we recycle more plastic than we use and
-              we're PETA Certified - which means we never test on animals. This
+              we&apos;re PETA Certified - which means we never test on animals. This
               is our #GoodnessInside.
             </p>
 
@@ -206,7 +172,7 @@ export default function Footer() {
                 I live near the coastal region, and sun tan is a big issue here.
                 A few months ago, I switched to Mamaearth Ubtan Face Wash, which
                 has worked pretty well. I now have a natural glow on my face and
-                my sun tan seems resolved too. Mamaearth's skincare products are
+                my sun tan seems resolved too. Mamaearth&apos;s skincare products are
                 made of natural ingredients and contain no harmful
                 preservatives. Being affordable is another positive too.
               </p>
@@ -234,7 +200,7 @@ export default function Footer() {
             <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <p className="text-gray-700 text-sm leading-relaxed mb-6 min-h-[180px]">
                 I have always used only natural products for my baby. One day, I
-                came across Mamaearth's products during an online search. I
+                came across Mamaearth&apos;s products during an online search. I
                 bought its Baby Shampoo, Toothpaste, and Face Cream; they all
                 were toxin-free and effective. The shopping experience and
                 payment system were safe, fast, and quick.

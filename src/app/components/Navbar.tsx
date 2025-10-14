@@ -7,7 +7,7 @@ import { subCategories } from "../data/navData.js";
 export default function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Searching for:", searchTerm);
   };
@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="bg-[rgb(240,68,56)] text-white text-xs md:text-sm py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
           <div className="text-right font-medium">
-            Asia's First Brand with MADE SAFE Certified Products
+            Asia&apos;s First Brand with MADE SAFE Certified Products
           </div>
           <div className="flex items-center space-x-1">
             <span className="font-medium">
@@ -103,13 +103,13 @@ export default function Navbar() {
       <nav className="bg-white relative">
         <div className="max-w-7xl mx-auto flex space-x-7 py-3 px-28 text-gray-600 font-15px text-sm">
           {categories.map((category, idx) => {
-            const key = category.toLowerCase().replace(/\s+/g, "-");
+            const key = category.toLowerCase().replace(/\s+/g, "-") as keyof typeof subCategories;
             const isMainCategory = subCategories[key];
 
             return (
               <div key={idx} className="relative group">
                 <Link
-                  href={key === "home" ? "/" : `/product-category/${key}`}
+                  href={category === "Home" ? "/" : `/product-category/${key}`}
                   className="hover:text-sky-500 whitespace-nowrap"
                 >
                   {category}

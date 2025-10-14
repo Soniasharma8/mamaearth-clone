@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     name: "Ubtan Natural Glow Face Wash with Turmeric & Saffron for Tan Removal",
-    category: "Removes Tan | Brightens Skin",
+    category: "face",
     image: "/images/products-ubtanfacewash.png",
     badge: "NO. 1 FACE WASH",
     badgeColor: "bg-green-500",
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     name: "Rice Face Wash With Rice Water & Niacinamide for Glass Skin",
-    category: "Gently Cleanses Skin | Hydrates Skin",
+    category: "face",
     image: "/images/products-ubtanfacewash.png",
     badge: "BEST SELLER",
     badgeColor: "bg-red-500",
@@ -30,7 +30,7 @@ const products = [
   {
     id: 3,
     name: "Vitamin C Daily Glow Sunscreen with Vitamin C & Turmeric for Sun Protection",
-    category: "SPF 50 & PA++++ Protection | Adds Natural Glow",
+    category: "face",
     image: "/images/products-vitaminc-sunscreen.png",
     badge: "MOST LOVED SUNSCREEN",
     badgeColor: "bg-green-500",
@@ -44,7 +44,7 @@ const products = [
   {
     id: 4,
     name: "Vitamin C Daily Glow Face Serum With Vitamin C & Turmeric for Radiant Skin",
-    category: "Enriched with 50X Vitamin C* | Brightens Skin",
+    category: "face",
       image: "/images/products-faceserum.png",
     badge: "BEST SELLER",
     badgeColor: "bg-red-500",
@@ -64,7 +64,7 @@ const products = [
     // offer: "10% OFF",
     badge: "Customer Favorite",
     rating: "4.8",
-    category: "Hair",
+    category: "hair",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const products = [
     // offer: "10% OFF",
     badge: "Best Seller",
     rating: "4.8",
-    category: "Skincare",
+    category: "face",
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ const products = [
     // offer: "20% OFF",
     badge: "Stock Running",
     rating: "4.8",
-    category: "Skincare",
+    category: "face",
   },
 ];
 export default products;
