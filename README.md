@@ -42,3 +42,6 @@ npm run dev
 bun run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🎥 Demo Screen Recording
+[Watch the demo on Loom](https://www.loom.com/share/d6840a0617d1403e9a21d435e14939b3?sid=a4ba17dd-b1e0-4b18-9e27-3314feef60f6)
