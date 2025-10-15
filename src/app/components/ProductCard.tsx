@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useCart } from "../context/CartContext";
 
 interface Product {
   badge?: string;
@@ -16,7 +17,7 @@ interface Product {
 }
 
 export default function ProductCard({ product }: { product: Product }) {
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0); // 👈 initially 0 means "Add to Cart" show karega
 
   // Define color mapping for badges
   const badgeColors = {
@@ -112,16 +113,18 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </div>
 
-        {/* Add to Cart Button or Quantity Selector */}
+        {/* ✅ Add to Cart Button OR Quantity Selector */}
         {quantity === 0 ? (
+          // 👉 Initially show "Add to Cart"
           <button
             onClick={() => setQuantity(1)}
-            className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2.5 rounded-md transition-colors"
+            className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2.5 rounded-md transition-all duration-300"
           >
             ADD TO CART
           </button>
         ) : (
-          <div className="flex items-center justify-between border-2 border-cyan-500 rounded-md">
+          // 👉 After clicking, show quantity selector
+          <div className="flex items-center justify-between border-2 border-cyan-500 rounded-md overflow-hidden transition-all duration-300">
             <button
               onClick={() => setQuantity(Math.max(0, quantity - 1))}
               className="text-cyan-500 font-bold text-xl w-10 h-10 flex items-center justify-center hover:bg-cyan-50"

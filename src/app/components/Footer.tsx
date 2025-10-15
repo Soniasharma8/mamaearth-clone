@@ -1,6 +1,7 @@
 "use client";
 
 import MainContent from "./MainContent";
+import AboutMamaearth from "./AboutMamaearth";
 
 export default function Footer() {
   return (
@@ -27,14 +28,14 @@ export default function Footer() {
             </h1>
             <p className="text-gray-600 text-lg leading-relaxed">
               At Mamaearth, we live to spread a little love and goodness every
-              day. We believe that goodness isn&apos;t a superpower, nor a special
-              gift, it&apos;s inside all of us and it shows in the little choices we
-              make. Our mission is to bring you the best of nature through our
-              purest and most nurturing products that are made without any
-              toxins or harmful chemicals. For us goodness also means being good
-              to the earth. Which is why we recycle more plastic than we use and
-              we&apos;re PETA Certified - which means we never test on animals. This
-              is our #GoodnessInside.
+              day. We believe that goodness isn&apos;t a superpower, nor a
+              special gift, it&apos;s inside all of us and it shows in the
+              little choices we make. Our mission is to bring you the best of
+              nature through our purest and most nurturing products that are
+              made without any toxins or harmful chemicals. For us goodness also
+              means being good to the earth. Which is why we recycle more
+              plastic than we use and we&apos;re PETA Certified - which means we
+              never test on animals. This is our #GoodnessInside.
             </p>
 
             {/* Buttons */}
@@ -49,7 +50,6 @@ export default function Footer() {
           </div>
         </div>
       </section>
-
       {/* Decorative Image Section */}
       <section className="max-w-12xl mx-auto px-4 py-4">
         <div className="relative h-70 lg:h-96 rounded-1xl overflow-hidden">
@@ -58,6 +58,22 @@ export default function Footer() {
             alt="Nature Banner"
             className="w-full h-full object-cover"
           />
+
+          {/* Text Overlay on Right Side */}
+          <div className="absolute inset-0 flex items-center justify-center  pr-6 lg:pr-20">
+            <div className="text-center text-[rgb(29,29,29)]">
+              <h2 className="text-1xl lg:text-3xl font-light pl-96">
+                We Plant Goodness
+              </h2>
+              <p className="text-lg lg:text-4xl mt-2 pl-96 text-[rgb(130,195,65)]">
+                1002168
+              </p>
+              <p className="mt-2 text-base lg:text-2xl pl-96">
+                Trees have got life already... <br />
+                Everytime you buy from us, we plant more trees!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -172,8 +188,8 @@ export default function Footer() {
                 I live near the coastal region, and sun tan is a big issue here.
                 A few months ago, I switched to Mamaearth Ubtan Face Wash, which
                 has worked pretty well. I now have a natural glow on my face and
-                my sun tan seems resolved too. Mamaearth&apos;s skincare products are
-                made of natural ingredients and contain no harmful
+                my sun tan seems resolved too. Mamaearth&apos;s skincare
+                products are made of natural ingredients and contain no harmful
                 preservatives. Being affordable is another positive too.
               </p>
               <div className="flex items-center gap-3">
@@ -227,6 +243,7 @@ export default function Footer() {
           </div>
         </div>
         <MainContent />
+        <AboutMamaearth />
       </section>
     </div>
   );
