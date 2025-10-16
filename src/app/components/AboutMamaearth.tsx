@@ -12,7 +12,7 @@ export default function AboutMamaearth() {
         <p className="text-lg text-gray-700">
           Mamaearth offers the best-in-class skincare products to help you
           discover the essence of beauty with the Goodness of Nature. We are
-          also Asia’s first brand to be accoladed with Made Safe Certification
+          also Asia&apos;s first brand to be accoladed with Made Safe Certification
           for our beauty products.Mamaearth Flash Sale at 50% Off on top-selling
           skin & haircare. Natural, toxin-free &Made Safe certified. Loved by
           millions for real results. Order now! We work with skincare experts to
@@ -61,7 +61,7 @@ export default function AboutMamaearth() {
         <p className="text-lg text-gray-700">
           Deciphering a skincare routine is overwhelming at times. With so many
           options available, it becomes tough to understand what your skin truly
-          needs. Our sedentary lifestyle has impacted skin's health, leaving it
+          needs. Our sedentary lifestyle has impacted skin&apos;s health, leaving it
           dull, and damaged. With the Goodness of Nature, it is possible to help
           protect the skin, boost radiance, prevent blemishes, and reverse the
           damage. You can check mama earth products list as our mama earth
@@ -69,7 +69,7 @@ export default function AboutMamaearth() {
           removal cream come enriched with natural ingredients and good Mama
           earth products price list to help get radiant skin complexion. <br />{" "}
           <br />
-          Here's what you can expect in our skincare range: <br /> <br />
+          Here&apos;s what you can expect in our skincare range: <br /> <br />
           <ul className="list-disc list-inside space-y-2">
             <li>
               Face Wash - The first step to cultivating a great skincare regimen
@@ -110,7 +110,7 @@ export default function AboutMamaearth() {
               improve the texture of your skin.
             </li>
             <li>
-              Face serum - It’s time to amp your skincare regimen with the
+              Face serum - It&apos;s time to amp your skincare regimen with the
               Mamaearth range. Our best-selling , Skin Illuminate Face Serum,
               gives you a radiant glow. Besides, Aqua Glow Face Serum range
               gives your skin a 72-hour long boost of hydration and helps
@@ -127,7 +127,7 @@ export default function AboutMamaearth() {
               Eye kajal - Let everyone notice your beautiful eyes with our
               Charcoal Black Long Stay . Its waterproof and smudge-free formula
               gives your eyes a glossy sheen for 11 hours straight. It is also
-              India’s first Made Safe certified Kajal that contains no toxins or
+              India&apos;s first Made Safe certified Kajal that contains no toxins or
               harmful chemicals.
             </li>
           </ul>
@@ -143,7 +143,7 @@ export default function AboutMamaearth() {
           and gentle products that nourish your scalp and treat dull and frizzy
           hair. Our mamaarth products are thoughtfully formulated with potent
           ingredients to address common hair care issues. <br /> <br />
-          Here's what you can expect in our haircare range: <br /> <br />
+          Here&apos;s what you can expect in our haircare range: <br /> <br />
           <ul className="list-disc list-inside space-y-2">
             <li>
               Hair oil - Our hair oils are made with time-tested ingredients
@@ -235,7 +235,7 @@ export default function AboutMamaearth() {
               exfoliates your skin.
             </li>
             <li>
-              Mamaearth's Deo helps you stay closer to yourself because it
+              Mamaearth&apos;s Deo helps you stay closer to yourself because it
               creates a fragrance as unique as you are. We welcome you to try
               out our exclusive range of today
             </li>
@@ -248,14 +248,14 @@ export default function AboutMamaearth() {
         <p className="text-lg text-gray-700">
           When it comes to your little munchkin, you would not want to settle on
           anything but the best. So, we are committed to crafting 100% safe and
-          natural products that are gentle on your baby’s skin. .
+          natural products that are gentle on your baby&apos;s skin. .
           <ul className="list-disc list-inside space-y-2">
             <li>
               Baby Bath Products - Our baby bath care range includes baby
               washes, baby shampoo, and bathing bars to make bath time a fun
               time for your little munchkin. Mamaearth baby products are
               tear-free formulas made with nourishing ingredients that deeply
-              hydrate and help balance the baby’s skin and pH levels. Also,
+              hydrate and help balance the baby&apos;s skin and pH levels. Also,
               check out our and which is best for dry & irritated skin.
             </li>
             <li>
@@ -263,10 +263,10 @@ export default function AboutMamaearth() {
               available on the Mamaearth website - baby lotions, creams, , and
               powders. Free from any toxins and harmful chemicals, our Made Safe
               Certified baby care range and is dermatologically tested for your
-              baby’s sensitive skin.
+              baby&apos;s sensitive skin.
             </li>
             <li>
-              Baby Diaper - Our plant-based diapers are gentle on your baby’s
+              Baby Diaper - Our plant-based diapers are gentle on your baby&apos;s
               skin and safe for the environment too. You can also get started
               with our Organic - Bamboo Based Baby Wipes and Milky Soft Diaper
               Rash Cream. Our diapers are made from corn starch and free from
@@ -274,7 +274,7 @@ export default function AboutMamaearth() {
               happy all day long.
             </li>
             <li>
-              Oral care - - Now you can protect your little one’s teeth
+              Oral care - - Now you can protect your little one&apos;s teeth
               naturally. All oral care products, including and baby lip balms,
               are thoughtfully formulated with high-quality ingredients. You can
               check out the Mamaearth all products with price on the website and
@@ -290,7 +290,7 @@ export default function AboutMamaearth() {
           Onion hair oil - Our is a new formula for stronger and healthier hair.
           Its lightweight and non-sticky formula help reduce hair fall and
           accelerate new hair cells. In addition, the nourishing ingredient
-          Redensyl unblocks hair follicles and promotes hair regrowth. It’s time
+          Redensyl unblocks hair follicles and promotes hair regrowth. It&apos;s time
           to welcome stronger and healthier hair. <br /> <br />
           Onion Shampoo - This nourishing promotes hair growth and deeply
           cleanses the hair by providing 22% more foam without toxins or harmful

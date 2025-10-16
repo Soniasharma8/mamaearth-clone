@@ -95,7 +95,7 @@ export default function MainContent() {
               <Link href="#">Terms & Conditions-Cashback</Link>
             </li>
             <li>
-              <Link href="#">We're Safe</Link>
+              <Link href="#">We&apos;re Safe</Link>
             </li>
             <li>
               <Link href="#">Track Order</Link>
